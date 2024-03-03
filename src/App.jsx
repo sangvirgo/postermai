@@ -11,24 +11,25 @@ export default function App() {
     <div className='w-[100%] h-[100%] content-center' >
       
 {/* poster and desciption  */}
-      <div className="bg-[url('./assets/bg-film.jpg')] bg-cover bg-center top-0 z-0 h-[600px] w-[100%] overflow-hidden bg-no-repeat " >
+      <div className="bg-[url('./assets/bg-film.jpg')] relative bg-cover bg-center top-0 z-0 h-[600px] w-[100%] overflow-hidden bg-no-repeat " >
 
         {/* poster */}
 
-      <div className='mx-auto w-full max-w-6xl  px-5 md:px-8 lg:px-8 backdrop-blur-md'>
+{/* sdkfjgh */}
+      <div className='mx-auto w-full max-w-6xl  px-5 md:px-8 lg:px-8 '>  
         <div className='flex flex-wrap items-center md:flex-nowrap md:space-x-10 lg:items-start '>
               <div className='relative  w-full flex md:relative my-[25px] gap-5'>
           {/* image */}
               <div className='w-1/3'>
-                <img alt="MAI" src={poster}  decoding="async" data-nimg="intrinsic" className="w-[600px] h-[550px] justify-self-center items-center basis-[350px]"/> 
+                <img alt="MAI" src={poster}  decoding="async" data-nimg="intrinsic" className="w-[600px] h-[550px] justify-self-center items-center basis-[350px] rounded-lg"/> 
               </div>
               
               {/* description */}
-              <div className='relative  flex-shrink w-2/3'>
+              <div className='relative  flex-shrink w-2/3 bg-gray-600 rounded-lg pl-1 '>
                   {/* 18+ */}
-                  <div className=" inline-flex h-5  items-center justify-center rounded-sm bg-opacity-80 px-1  text-xs font-semibold text-white bg-red-600 text-opacity-95 cinema-rate-red">18+</div>
+                  <div className=" inline-flex h-5  items-center justify-center rounded-sm bg-opacity-80 px-1  text-xs font-semibold text-white bg-red-600 text-opacity-95 cinema-rate-red backdrop-blur-3xl " >18+</div>
                   {/* mai */}
-                  <h1 className=" mt-2 text-2xl font-bold text-white md:text-4xl">MAI</h1>
+                  <h1 className=" mt-2 text-2xl font-bold text-white md:text-4xl backdrop-blur-xl">MAI</h1>
                   {/* mai 2024 151p */}
                   <ul className=" mt-1 flex flex-wrap items-center text-sm text-white text-opacity-60 md:text-base">
                     <li className="">MAI</li>
@@ -112,7 +113,6 @@ export default function App() {
               </div>
         </div>
       </div>
-
 
       </div>
 
