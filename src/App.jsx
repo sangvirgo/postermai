@@ -11,11 +11,11 @@ export default function App() {
     <div className='w-[100%] h-[100%] content-center' >
       
 {/* poster and desciption  */}
-      <div className="bg-[url('./assets/bg-film.jpg')] bg-cover bg-center top-0 z-0 h-[600px] w-[100%] overflow-hidden bg-no-repeat bg-opacity-sm" >
+      <div className="bg-[url('./assets/bg-film.jpg')] bg-cover bg-center top-0 z-0 h-[600px] w-[100%] overflow-hidden bg-no-repeat " >
 
         {/* poster */}
 
-      <div className='mx-auto w-full max-w-6xl  px-5 md:px-8 lg:px-8'>
+      <div className='mx-auto w-full max-w-6xl  px-5 md:px-8 lg:px-8 backdrop-blur-md'>
         <div className='flex flex-wrap items-center md:flex-nowrap md:space-x-10 lg:items-start '>
               <div className='relative  w-full flex md:relative my-[25px] gap-5'>
           {/* image */}
